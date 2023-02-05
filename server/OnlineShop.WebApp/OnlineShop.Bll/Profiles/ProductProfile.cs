@@ -9,10 +9,10 @@ namespace OnlineShop.Bll.Profiles
         public ProductProfile()
         {
             CreateMap<Product, ProductDto>()
-                .ForMember(x => x.Category, y => y.MapFrom(z => z.Category.CategoryName))
-                .ForMember(x => x.ProductColor, y => y.MapFrom(z => z.Color.ProductColor))
-                .ForMember(x => x.ProductSize, y => y.MapFrom(z => z.Size.ProductSize));
+                .ForMember(x => x.Category, y => y.MapFrom(z => z.Category.CategoryName));
             CreateMap<CreateProductDto, Product>();
+            CreateMap<ProductSizeDto, ProductSize>();
+            CreateMap<ProductColorDto, ProductColor>();
 
         }
     }

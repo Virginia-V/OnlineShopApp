@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OnlineShop.Dal;
 
@@ -11,9 +12,10 @@ using OnlineShop.Dal;
 namespace OnlineShop.Dal.Migrations
 {
     [DbContext(typeof(OnlineShopDbContext))]
-    partial class OnlineShopDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230205210757_AddTables")]
+    partial class AddTables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -528,6 +530,9 @@ namespace OnlineShop.Dal.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
+                    b.Property<int>("ColorId")
+                        .HasColumnType("int");
+
                     b.Property<string>("ProductDescription")
                         .IsRequired()
                         .HasMaxLength(200)
@@ -551,9 +556,16 @@ namespace OnlineShop.Dal.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<int>("SizeId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
+
+                    b.HasIndex("ColorId");
+
+                    b.HasIndex("SizeId");
 
                     b.ToTable("Products");
                 });
@@ -746,7 +758,23 @@ namespace OnlineShop.Dal.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("OnlineShop.Domain.Color", "Color")
+                        .WithMany("Products")
+                        .HasForeignKey("ColorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("OnlineShop.Domain.Size", "Size")
+                        .WithMany("Products")
+                        .HasForeignKey("SizeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Category");
+
+                    b.Navigation("Color");
+
+                    b.Navigation("Size");
                 });
 
             modelBuilder.Entity("OnlineShop.Domain.ProductColor", b =>
@@ -806,6 +834,8 @@ namespace OnlineShop.Dal.Migrations
             modelBuilder.Entity("OnlineShop.Domain.Color", b =>
                 {
                     b.Navigation("ProductColors");
+
+                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("OnlineShop.Domain.Order", b =>
@@ -827,6 +857,8 @@ namespace OnlineShop.Dal.Migrations
             modelBuilder.Entity("OnlineShop.Domain.Size", b =>
                 {
                     b.Navigation("ProductSizes");
+
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

@@ -66,7 +66,6 @@ D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\Online
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\OnlineShop.API.AssemblyInfoInputs.cache
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\OnlineShop.API.AssemblyInfo.cs
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\OnlineShop.API.csproj.CoreCompileInputs.cache
-D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\OnlineShop.API.MvcApplicationPartsAssemblyInfo.cs
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\OnlineShop.API.MvcApplicationPartsAssemblyInfo.cache
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\staticwebassets.build.json
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\staticwebassets.development.json

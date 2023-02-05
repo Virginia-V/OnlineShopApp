@@ -16,13 +16,14 @@ namespace OnlineShop.Common.Dtos.Products
         [StringLength(200)]
         public string ProductDescription { get; set; }
         [Required]
-        public int SizeId { get; set; }
-        [Required]
-        public int ColorId { get; set; }
-        [Required]
         [StringLength(200)]
         public string ProductImage { get; set; }
         [Required]
         public int CategoryId { get; set; }
+        [Required]
+        public IList<ProductSizeDto> ProductSizes { get; set; }
+        [Required]
+        public IList<ProductColorDto> ProductColors { get; set; }
+
     }
 }
