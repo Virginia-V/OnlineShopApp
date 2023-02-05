@@ -689,6 +689,7 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.13",
           "Microsoft.EntityFrameworkCore": "6.0.13",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.13",
+          "OnlineShop.Common": "1.0.0",
           "OnlineShop.Domain": "1.0.0"
         },
         "compile": {

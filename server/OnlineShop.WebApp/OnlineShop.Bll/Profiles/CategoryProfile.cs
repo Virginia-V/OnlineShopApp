@@ -9,6 +9,7 @@ namespace OnlineShop.Bll.Profiles
         public CategoryProfile()
         {
             CreateMap<Category, CategoryDto>();
+
         }
     }
 }

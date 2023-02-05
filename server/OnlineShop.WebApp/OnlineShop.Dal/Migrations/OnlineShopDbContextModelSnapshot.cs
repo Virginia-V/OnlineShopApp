@@ -278,6 +278,104 @@ namespace OnlineShop.Dal.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CategoryImage = "https://i.pinimg.com/564x/33/db/25/33db259e2b81912d310f8e662a8df978.jpg",
+                            CategoryName = "Coats"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CategoryImage = "https://i.pinimg.com/564x/67/89/99/678999e2b02a0e0df8e008c1ceeef56c.jpg",
+                            CategoryName = "Gym Clothes"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CategoryImage = "https://i.pinimg.com/564x/67/59/0b/67590bf349a8f6dc016dac3ff3fd9c14.jpg",
+                            CategoryName = "Jeans"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CategoryImage = "https://i.pinimg.com/564x/07/a0/d5/07a0d5a33b8f4168ef6ec4c03944ad92.jpg",
+                            CategoryName = "Hoodies"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CategoryImage = "https://i.pinimg.com/564x/31/e6/a5/31e6a56cc424e4ce13153568489277de.jpg",
+                            CategoryName = "Vests"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CategoryImage = "https://i.pinimg.com/564x/c3/2f/7a/c32f7a60a8fa5335e83c3cc82795c609.jpg",
+                            CategoryName = "T-Shirts"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CategoryImage = "https://i.pinimg.com/564x/3d/81/de/3d81dedfd3a51be3175291d9d34b4fca.jpg",
+                            CategoryName = "Skirts"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CategoryImage = "https://i.pinimg.com/564x/14/4e/26/144e26c0bcce43eb12ff83518188b87d.jpg",
+                            CategoryName = "Shorts"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            CategoryImage = "https://i.pinimg.com/564x/88/a7/87/88a7879cd516666f15cf3bbe458ba169.jpg",
+                            CategoryName = "Sweaters"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            CategoryImage = "https://i.pinimg.com/564x/09/c3/0f/09c30fdf441f01e4c17712252c54436e.jpg",
+                            CategoryName = "Shirts"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            CategoryImage = "https://i.pinimg.com/564x/dc/b2/99/dcb29963df0ee7aec9843e2bf7e4d598.jpg",
+                            CategoryName = "Swimsuits"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            CategoryImage = "https://i.pinimg.com/564x/75/8a/f1/758af14dc0f392d1d1f47126a35d7762.jpg",
+                            CategoryName = "Pajamas"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            CategoryImage = "https://i.pinimg.com/564x/e8/09/6d/e8096d13866fa0d9ad3f554a85d7a40f.jpg",
+                            CategoryName = "Sheath Dresses"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            CategoryImage = "https://i.pinimg.com/564x/b4/24/27/b42427e7a1e8ca9272cdfc7ac44fbda4.jpg",
+                            CategoryName = "Scarfs"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            CategoryImage = "https://i.pinimg.com/564x/72/4a/53/724a53d910fc333bfb10526c6c2b8e32.jpg",
+                            CategoryName = "Raincoats"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            CategoryImage = "https://i.pinimg.com/564x/c6/bc/58/c6bc5809fefe0f39d5f796953655909a.jpg",
+                            CategoryName = "Tracksuits"
+                        });
                 });
 
             modelBuilder.Entity("OnlineShop.Domain.Color", b =>
@@ -296,6 +394,88 @@ namespace OnlineShop.Dal.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Colors");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ProductColor = "black"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ProductColor = "silver"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            ProductColor = "gray"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            ProductColor = "white"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            ProductColor = "maroon"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            ProductColor = "red"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            ProductColor = "purple"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            ProductColor = "fuchsia"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            ProductColor = "green"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            ProductColor = "lime"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            ProductColor = "olive"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            ProductColor = "navy"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            ProductColor = "yellow"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            ProductColor = "blue"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            ProductColor = "teal"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            ProductColor = "aqua"
+                        });
                 });
 
             modelBuilder.Entity("OnlineShop.Domain.Order", b =>
@@ -404,6 +584,38 @@ namespace OnlineShop.Dal.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Sizes");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ProductSize = "XS"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ProductSize = "S"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            ProductSize = "M"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            ProductSize = "L"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            ProductSize = "XL"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            ProductSize = "XXL"
+                        });
                 });
 
             modelBuilder.Entity("OnlineShop.Domain.Auth.RoleClaim", b =>

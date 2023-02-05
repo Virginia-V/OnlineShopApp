@@ -697,6 +697,16 @@
           }
         }
       },
+      "OnlineShop.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/OnlineShop.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlineShop.Common.dll": {}
+        }
+      },
       "OnlineShop.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2022,6 +2032,11 @@
         "version.txt"
       ]
     },
+    "OnlineShop.Common/1.0.0": {
+      "type": "project",
+      "path": "../OnlineShop.Common/OnlineShop.Common.csproj",
+      "msbuildProject": "../OnlineShop.Common/OnlineShop.Common.csproj"
+    },
     "OnlineShop.Domain/1.0.0": {
       "type": "project",
       "path": "../OnlineShop.Domain/OnlineShop.Domain.csproj",
@@ -2035,6 +2050,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 6.0.13",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.13",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.13",
+      "OnlineShop.Common >= 1.0.0",
       "OnlineShop.Domain >= 1.0.0"
     ]
   },
@@ -2070,6 +2086,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "D:\\OnlineShopApp\\server\\OnlineShop.WebApp\\OnlineShop.Common\\OnlineShop.Common.csproj": {
+              "projectPath": "D:\\OnlineShopApp\\server\\OnlineShop.WebApp\\OnlineShop.Common\\OnlineShop.Common.csproj"
+            },
             "D:\\OnlineShopApp\\server\\OnlineShop.WebApp\\OnlineShop.Domain\\OnlineShop.Domain.csproj": {
               "projectPath": "D:\\OnlineShopApp\\server\\OnlineShop.WebApp\\OnlineShop.Domain\\OnlineShop.Domain.csproj"
             }

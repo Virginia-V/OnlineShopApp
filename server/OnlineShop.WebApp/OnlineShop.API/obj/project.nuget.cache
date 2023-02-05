@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "h8xtlPA2Gb79Iosot3Y7/hRR1Lc98EEvCPhoolPagtl3nDsMCBHUSB87pg7SMhbTo6SN8STV3gpKBl+hVe8QIg==",
+  "dgSpecHash": "+bJeSQxF7fzql+Ef/gM58pz4I1vI+kB2/u4Kb8kOZVzLC9HnZ0gODae7c0CFzFD8hIv3oZUSb+MOJi0lSZQIEA==",
   "success": true,
   "projectFilePath": "D:\\OnlineShopApp\\server\\OnlineShop.WebApp\\OnlineShop.API\\OnlineShop.API.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.entityframeworkcore.proxies\\6.0.13\\microsoft.entityframeworkcore.proxies.6.0.13.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.13\\microsoft.entityframeworkcore.relational.6.0.13.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.13\\microsoft.entityframeworkcore.sqlserver.6.0.13.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.13\\microsoft.entityframeworkcore.tools.6.0.13.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",

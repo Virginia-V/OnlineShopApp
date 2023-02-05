@@ -11,6 +11,15 @@ namespace OnlineShop.Dal.EntityConfiguration
             builder.Property(x => x.ProductSize)
                  .IsRequired()
                  .HasMaxLength(50);
+
+            builder.HasData(new { Id = 1, ProductSize = "XS" },
+                          new { Id = 2, ProductSize = "S" },
+                          new { Id = 3, ProductSize = "M" },
+                          new { Id = 4, ProductSize = "L" },
+                          new { Id = 5, ProductSize = "XL" },
+                          new { Id = 6, ProductSize = "XXL" });
+                        
+
         }
     }
 }

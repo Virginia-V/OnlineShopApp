@@ -28,5 +28,6 @@ namespace OnlineShop.Bll.Services
             }
             return _mapper.Map<IEnumerable<CategoryDto>>(records);
         }
+ 
     }
 }

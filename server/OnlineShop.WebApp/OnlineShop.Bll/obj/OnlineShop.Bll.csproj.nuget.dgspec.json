@@ -164,6 +164,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "D:\\OnlineShopApp\\server\\OnlineShop.WebApp\\OnlineShop.Common\\OnlineShop.Common.csproj": {
+                "projectPath": "D:\\OnlineShopApp\\server\\OnlineShop.WebApp\\OnlineShop.Common\\OnlineShop.Common.csproj"
+              },
               "D:\\OnlineShopApp\\server\\OnlineShop.WebApp\\OnlineShop.Domain\\OnlineShop.Domain.csproj": {
                 "projectPath": "D:\\OnlineShopApp\\server\\OnlineShop.WebApp\\OnlineShop.Domain\\OnlineShop.Domain.csproj"
               }

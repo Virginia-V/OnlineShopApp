@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace OnlineShop.Common.Dtos.Orders
 {
-    internal class CreateOrderDto
+    public class CreateOrderDto
     {
+        [Required]
+        public decimal ShippingAmount { get; set; }
+        [Required]
+        public IList<OrderedProductDto> OrderedProducts { get; set; }
+
     }
 }
+

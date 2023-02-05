@@ -246,6 +246,18 @@
           "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.Tools/6.0.13": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "6.0.13"
+        },
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
+        }
+      },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
         "type": "package",
         "build": {
@@ -2142,6 +2154,7 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.13",
           "Microsoft.EntityFrameworkCore": "6.0.13",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.13",
+          "OnlineShop.Common": "1.0.0",
           "OnlineShop.Domain": "1.0.0"
         },
         "compile": {
@@ -2544,6 +2557,31 @@
         "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.xml",
         "microsoft.entityframeworkcore.sqlserver.6.0.13.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlserver.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Tools/6.0.13": {
+      "sha512": "kdAm0P6MBGCIJ2gpxEwApMdHmiidiuE78mzna3D6dHuoeVyO+tb8redK2X31bEECUU8dYD7C+NfakBUCKgphuA==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.tools/6.0.13",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/_._",
+        "microsoft.entityframeworkcore.tools.6.0.13.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.nuspec",
+        "tools/EntityFrameworkCore.PS2.psd1",
+        "tools/EntityFrameworkCore.PS2.psm1",
+        "tools/EntityFrameworkCore.psd1",
+        "tools/EntityFrameworkCore.psm1",
+        "tools/about_EntityFrameworkCore.help.txt",
+        "tools/init.ps1",
+        "tools/net461/any/ef.exe",
+        "tools/net461/win-arm64/ef.exe",
+        "tools/net461/win-x86/ef.exe",
+        "tools/netcoreapp2.0/any/ef.dll",
+        "tools/netcoreapp2.0/any/ef.runtimeconfig.json"
       ]
     },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
@@ -7254,11 +7292,15 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.0",
+      "Microsoft.EntityFrameworkCore >= 6.0.13",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.13",
       "Microsoft.EntityFrameworkCore.Proxies >= 6.0.13",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.13",
+      "Microsoft.EntityFrameworkCore.Tools >= 6.0.13",
       "OnlineShop.Bll >= 1.0.0",
+      "OnlineShop.Common >= 1.0.0",
       "OnlineShop.Dal >= 1.0.0",
+      "OnlineShop.Domain >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -7297,8 +7339,14 @@
             "D:\\OnlineShopApp\\server\\OnlineShop.WebApp\\OnlineShop.Bll\\OnlineShop.Bll.csproj": {
               "projectPath": "D:\\OnlineShopApp\\server\\OnlineShop.WebApp\\OnlineShop.Bll\\OnlineShop.Bll.csproj"
             },
+            "D:\\OnlineShopApp\\server\\OnlineShop.WebApp\\OnlineShop.Common\\OnlineShop.Common.csproj": {
+              "projectPath": "D:\\OnlineShopApp\\server\\OnlineShop.WebApp\\OnlineShop.Common\\OnlineShop.Common.csproj"
+            },
             "D:\\OnlineShopApp\\server\\OnlineShop.WebApp\\OnlineShop.Dal\\OnlineShop.Dal.csproj": {
               "projectPath": "D:\\OnlineShopApp\\server\\OnlineShop.WebApp\\OnlineShop.Dal\\OnlineShop.Dal.csproj"
+            },
+            "D:\\OnlineShopApp\\server\\OnlineShop.WebApp\\OnlineShop.Domain\\OnlineShop.Domain.csproj": {
+              "projectPath": "D:\\OnlineShopApp\\server\\OnlineShop.WebApp\\OnlineShop.Domain\\OnlineShop.Domain.csproj"
             }
           }
         }
@@ -7317,6 +7365,10 @@
             "target": "Package",
             "version": "[12.0.0, )"
           },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.13, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
@@ -7328,6 +7380,12 @@
             "version": "[6.0.13, )"
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "[6.0.13, )"
+          },
+          "Microsoft.EntityFrameworkCore.Tools": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[6.0.13, )"
           },

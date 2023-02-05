@@ -9,5 +9,6 @@
         public const string NoSizes = "There aren't any sizes!";
         public const string NoProductForDelete = "Product you are trying to delete doesn't exist!";
         public const string NoOrderForDelete = "Order you are trying to delete doesn't exist!";
+        public const string SameProductError = "Please don't enter the same product more than once!";
     }
 }
