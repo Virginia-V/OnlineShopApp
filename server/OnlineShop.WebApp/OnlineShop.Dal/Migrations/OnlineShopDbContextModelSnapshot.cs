@@ -280,6 +280,24 @@ namespace OnlineShop.Dal.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("OnlineShop.Domain.Color", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("ProductColor")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Colors");
+                });
+
             modelBuilder.Entity("OnlineShop.Domain.Order", b =>
                 {
                     b.Property<int>("Id")
@@ -330,10 +348,8 @@ namespace OnlineShop.Dal.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
-                    b.Property<string>("ProductColor")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                    b.Property<int>("ColorId")
+                        .HasColumnType("int");
 
                     b.Property<string>("ProductDescription")
                         .IsRequired()
@@ -358,6 +374,28 @@ namespace OnlineShop.Dal.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<int>("SizeId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.HasIndex("ColorId");
+
+                    b.HasIndex("SizeId");
+
+                    b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("OnlineShop.Domain.Size", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
                     b.Property<string>("ProductSize")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -365,9 +403,7 @@ namespace OnlineShop.Dal.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoryId");
-
-                    b.ToTable("Products");
+                    b.ToTable("Sizes");
                 });
 
             modelBuilder.Entity("OnlineShop.Domain.Auth.RoleClaim", b =>
@@ -478,7 +514,23 @@ namespace OnlineShop.Dal.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("OnlineShop.Domain.Color", "Color")
+                        .WithMany("Products")
+                        .HasForeignKey("ColorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("OnlineShop.Domain.Size", "Size")
+                        .WithMany("Products")
+                        .HasForeignKey("SizeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Category");
+
+                    b.Navigation("Color");
+
+                    b.Navigation("Size");
                 });
 
             modelBuilder.Entity("OnlineShop.Domain.Auth.User", b =>
@@ -497,6 +549,11 @@ namespace OnlineShop.Dal.Migrations
                     b.Navigation("Products");
                 });
 
+            modelBuilder.Entity("OnlineShop.Domain.Color", b =>
+                {
+                    b.Navigation("Products");
+                });
+
             modelBuilder.Entity("OnlineShop.Domain.Order", b =>
                 {
                     b.Navigation("OrderedProducts");
@@ -507,6 +564,11 @@ namespace OnlineShop.Dal.Migrations
                     b.Navigation("BasketProducts");
 
                     b.Navigation("OrderedProducts");
+                });
+
+            modelBuilder.Entity("OnlineShop.Domain.Size", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

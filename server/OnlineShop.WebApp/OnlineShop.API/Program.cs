@@ -1,13 +1,23 @@
 using Microsoft.EntityFrameworkCore;
+using OnlineShop.Bll;
+using OnlineShop.Bll.Interfaces;
+using OnlineShop.Bll.Services;
 using OnlineShop.Dal;
+using OnlineShop.Dal.Interfaces;
+using OnlineShop.Dal.Repositories;
 using OnlineShop.Domain.Auth;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
+builder.Services.AddScoped(typeof(IRepository<>), typeof(EFCoreRepository<>));
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IColorService, ColorService>();
+builder.Services.AddScoped<ISizeService, SizeService>();
+
 builder.Services.AddSwaggerGen();
+builder.Services.AddAutoMapper(typeof(BllAssemblyMarker));
 
 builder.Services.AddDbContext<OnlineShopDbContext>(optionBuilder =>
 {
@@ -23,7 +33,6 @@ builder.Services.AddIdentity<User, Role>(options =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

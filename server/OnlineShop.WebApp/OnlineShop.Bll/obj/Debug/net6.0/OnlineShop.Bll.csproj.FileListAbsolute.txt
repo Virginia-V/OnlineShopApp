@@ -10,3 +10,8 @@ D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\obj\Debug\net6.0\Online
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\obj\Debug\net6.0\refint\OnlineShop.Bll.dll
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\obj\Debug\net6.0\OnlineShop.Bll.pdb
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\obj\Debug\net6.0\ref\OnlineShop.Bll.dll
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\bin\Debug\net6.0\OnlineShop.Common.dll
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\bin\Debug\net6.0\OnlineShop.Domain.dll
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\bin\Debug\net6.0\OnlineShop.Common.pdb
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\bin\Debug\net6.0\OnlineShop.Domain.pdb
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\obj\Debug\net6.0\OnlineShop.Bll.csproj.CopyComplete

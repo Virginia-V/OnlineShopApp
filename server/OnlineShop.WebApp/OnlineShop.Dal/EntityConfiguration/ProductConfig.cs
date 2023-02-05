@@ -19,12 +19,6 @@ namespace OnlineShop.Dal.EntityConfiguration
             builder.Property(x => x.ProductDescription)
                  .IsRequired()
                  .HasMaxLength(200);
-            builder.Property(x => x.ProductSize)
-                 .IsRequired()
-                 .HasMaxLength(50);
-            builder.Property(x => x.ProductColor)
-                 .IsRequired()
-                 .HasMaxLength(50);
             builder.Property(x => x.ProductImage)
                 .IsRequired()
                 .HasMaxLength(200);

@@ -32,6 +32,8 @@ namespace OnlineShop.Dal
         public virtual DbSet<Basket> Baskets { get; set; }
         public virtual DbSet<BasketProduct> BasketProducts { get; set; }
         public virtual DbSet<OrderedProduct> OrderedProducts { get; set; }
+        public virtual DbSet<Size> Sizes { get; set; }
+        public virtual DbSet<Color> Colors { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
 
     }
