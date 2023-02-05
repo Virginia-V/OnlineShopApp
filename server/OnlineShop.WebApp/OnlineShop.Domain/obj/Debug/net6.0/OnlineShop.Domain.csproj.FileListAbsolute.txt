@@ -1,0 +1,12 @@
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Domain\bin\Debug\net6.0\OnlineShop.Domain.deps.json
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Domain\bin\Debug\net6.0\OnlineShop.Domain.dll
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Domain\bin\Debug\net6.0\OnlineShop.Domain.pdb
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Domain\obj\Debug\net6.0\OnlineShop.Domain.csproj.AssemblyReference.cache
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Domain\obj\Debug\net6.0\OnlineShop.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Domain\obj\Debug\net6.0\OnlineShop.Domain.AssemblyInfoInputs.cache
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Domain\obj\Debug\net6.0\OnlineShop.Domain.AssemblyInfo.cs
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Domain\obj\Debug\net6.0\OnlineShop.Domain.csproj.CoreCompileInputs.cache
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Domain\obj\Debug\net6.0\OnlineShop.Domain.dll
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Domain\obj\Debug\net6.0\refint\OnlineShop.Domain.dll
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Domain\obj\Debug\net6.0\OnlineShop.Domain.pdb
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Domain\obj\Debug\net6.0\ref\OnlineShop.Domain.dll

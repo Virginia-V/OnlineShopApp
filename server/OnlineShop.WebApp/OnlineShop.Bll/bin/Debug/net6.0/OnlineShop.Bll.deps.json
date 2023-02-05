@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "OnlineShop.Bll/1.0.0": {
+        "runtime": {
+          "OnlineShop.Bll.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OnlineShop.Bll/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,17 @@
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Dal\bin\Debug\net6.0\OnlineShop.Dal.deps.json
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Dal\bin\Debug\net6.0\OnlineShop.Dal.runtimeconfig.json
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Dal\bin\Debug\net6.0\OnlineShop.Dal.dll
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Dal\bin\Debug\net6.0\OnlineShop.Dal.pdb
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Dal\bin\Debug\net6.0\OnlineShop.Domain.dll
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Dal\bin\Debug\net6.0\OnlineShop.Domain.pdb
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Dal\obj\Debug\net6.0\OnlineShop.Dal.csproj.AssemblyReference.cache
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Dal\obj\Debug\net6.0\OnlineShop.Dal.GeneratedMSBuildEditorConfig.editorconfig
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Dal\obj\Debug\net6.0\OnlineShop.Dal.AssemblyInfoInputs.cache
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Dal\obj\Debug\net6.0\OnlineShop.Dal.AssemblyInfo.cs
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Dal\obj\Debug\net6.0\OnlineShop.Dal.csproj.CoreCompileInputs.cache
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Dal\obj\Debug\net6.0\OnlineShop.Dal.csproj.CopyComplete
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Dal\obj\Debug\net6.0\OnlineShop.Dal.dll
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Dal\obj\Debug\net6.0\refint\OnlineShop.Dal.dll
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Dal\obj\Debug\net6.0\OnlineShop.Dal.pdb
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Dal\obj\Debug\net6.0\OnlineShop.Dal.genruntimeconfig.cache
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Dal\obj\Debug\net6.0\ref\OnlineShop.Dal.dll
