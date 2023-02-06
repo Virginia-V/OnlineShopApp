@@ -1,3 +1,8 @@
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\obj\Debug\net6.0\OnlineShop.Bll.csproj.AssemblyReference.cache
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\obj\Debug\net6.0\OnlineShop.Bll.GeneratedMSBuildEditorConfig.editorconfig
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\obj\Debug\net6.0\OnlineShop.Bll.AssemblyInfoInputs.cache
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\obj\Debug\net6.0\OnlineShop.Bll.AssemblyInfo.cs
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\obj\Debug\net6.0\OnlineShop.Bll.csproj.CoreCompileInputs.cache
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\bin\Debug\net6.0\OnlineShop.Bll.deps.json
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\bin\Debug\net6.0\OnlineShop.Bll.dll
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\bin\Debug\net6.0\OnlineShop.Bll.pdb
@@ -7,11 +12,6 @@ D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\bin\Debug\net6.0\Online
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\bin\Debug\net6.0\OnlineShop.Common.pdb
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\bin\Debug\net6.0\OnlineShop.Dal.pdb
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\bin\Debug\net6.0\OnlineShop.Domain.pdb
-D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\obj\Debug\net6.0\OnlineShop.Bll.csproj.AssemblyReference.cache
-D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\obj\Debug\net6.0\OnlineShop.Bll.GeneratedMSBuildEditorConfig.editorconfig
-D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\obj\Debug\net6.0\OnlineShop.Bll.AssemblyInfoInputs.cache
-D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\obj\Debug\net6.0\OnlineShop.Bll.AssemblyInfo.cs
-D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\obj\Debug\net6.0\OnlineShop.Bll.csproj.CoreCompileInputs.cache
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\obj\Debug\net6.0\OnlineShop.Bll.csproj.CopyComplete
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\obj\Debug\net6.0\OnlineShop.Bll.dll
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.Bll\obj\Debug\net6.0\refint\OnlineShop.Bll.dll

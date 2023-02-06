@@ -4,5 +4,6 @@ namespace OnlineShop.Domain.Auth
 {
     public class UserClaim : IdentityUserClaim<int>
     {
+
     }
 }

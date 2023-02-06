@@ -1,5 +1,12 @@
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\OnlineShop.API.csproj.AssemblyReference.cache
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\OnlineShop.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\OnlineShop.API.AssemblyInfoInputs.cache
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\OnlineShop.API.AssemblyInfo.cs
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\OnlineShop.API.csproj.CoreCompileInputs.cache
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\OnlineShop.API.MvcApplicationPartsAssemblyInfo.cache
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\appsettings.Development.json
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\appsettings.json
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\OnlineShop.API.staticwebassets.runtime.json
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\OnlineShop.API.exe
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\OnlineShop.API.deps.json
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\OnlineShop.API.runtimeconfig.json
@@ -9,9 +16,11 @@ D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\AutoMa
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\Castle.Core.dll
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\Humanizer.dll
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -21,6 +30,7 @@ D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\Micros
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\Microsoft.Identity.Client.dll
@@ -61,12 +71,7 @@ D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\Online
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\OnlineShop.Common.pdb
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\OnlineShop.Dal.pdb
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\bin\Debug\net6.0\OnlineShop.Domain.pdb
-D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\OnlineShop.API.csproj.AssemblyReference.cache
-D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\OnlineShop.API.GeneratedMSBuildEditorConfig.editorconfig
-D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\OnlineShop.API.AssemblyInfoInputs.cache
-D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\OnlineShop.API.AssemblyInfo.cs
-D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\OnlineShop.API.csproj.CoreCompileInputs.cache
-D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\OnlineShop.API.MvcApplicationPartsAssemblyInfo.cache
+D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\OnlineShop.API.MvcApplicationPartsAssemblyInfo.cs
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\staticwebassets.build.json
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\staticwebassets.development.json
 D:\OnlineShopApp\server\OnlineShop.WebApp\OnlineShop.API\obj\Debug\net6.0\scopedcss\bundle\OnlineShop.API.styles.css
