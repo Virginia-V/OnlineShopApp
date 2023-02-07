@@ -34,7 +34,6 @@ namespace OnlineShop.API.Infrastructure
             var encodedToken = tokenHandler.WriteToken(jwtSecurityToken);
             return new UserManagerResponse
             {
-                Message = "Successfully",
                 IsSucces = true,
                 ExpireDate = jwtSecurityToken.ValidTo,
                 Token = encodedToken,

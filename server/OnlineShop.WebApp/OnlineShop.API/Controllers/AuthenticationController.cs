@@ -21,7 +21,7 @@ namespace OnlineShop.API.Controllers
         private readonly IConfiguration _configuration;
 
         public AuthenticationController(UserManager<User> userManager, RoleManager<Role> roleManager,
-                                        SignInManager<User> signInManager, IOptions<AuthOptions> authOptions, IConfiguration configuration)
+               SignInManager<User> signInManager, IOptions<AuthOptions> authOptions, IConfiguration configuration)
         {
             _userManager = userManager;
             _roleManager = roleManager;
@@ -29,16 +29,19 @@ namespace OnlineShop.API.Controllers
             _authenticationOptions = authOptions.Value;
             _configuration = configuration;
         }
+        /// <summary>
+        /// [AllowAnonymous] => it means that even unauthenticated users can access that action.
+        /// </summary>
         [AllowAnonymous]
         [HttpPost]
         [Route("register")]
-        public async Task<UserManagerResponse> Register([FromBody] RegisterModelDto model)
+        public async Task<IActionResult> RegisterAsync([FromBody] RegisterModelDto model)
         {
             if (ModelState.IsValid)
             {
-                var userCheck = await _userManager.FindByEmailAsync(model.Email);
+                var user_exist = await _userManager.FindByEmailAsync(model.Email);
 
-                if (userCheck == null)
+                if (user_exist == null)
                 {
                     var user = new User
                     {
@@ -48,74 +51,88 @@ namespace OnlineShop.API.Controllers
                     var result = await _userManager.CreateAsync(user, model.Password);
                     if (result.Succeeded)
                     {
-                        var resultRole = _roleManager.RoleExistsAsync("user").Result;
+                        var resultRole = await _roleManager.RoleExistsAsync("user");
                         if (!resultRole)
                         {
                             var role = new Role("user");
-                            var roleResult = _roleManager.CreateAsync(role).Result;
+                            var roleResult = await _roleManager.CreateAsync(role);
                             if (!roleResult.Succeeded)
                             {
-                                return new UserManagerResponse
+                                return BadRequest(new UserManagerResponse()
                                 {
-                                    Message = "Such User Already Exists"
-                                };
+                                    IsSucces = false,
+                                    Errors = new List<string>()
+                                         {
+                                           "User with such role already exists."
+                                         }
+                                });
                             }
                         }
                         await _userManager.AddToRoleAsync(user, "user");
                         await _signInManager.SignInAsync(user, false);
-                        //var encodedToken = JwtService.GenerateJwt(user, _userManager, _authenticationOptions);
-                        return await JwtService.GenerateJwt(user, _userManager, _authenticationOptions);
+                        var encodedToken = await JwtService.GenerateJwt(user, _userManager, _authenticationOptions);
+                        return Ok(encodedToken);
                     }
                     else
                     {
                         foreach (var error in result.Errors)
                         {
                             ModelState.AddModelError(string.Empty, error.Description);
-                            return new UserManagerResponse
+                            return BadRequest(new UserManagerResponse()
                             {
-                                Message = "Error"
-                            };
+                                IsSucces = false,
+                                Errors = new List<string>()
+                                    {
+                                      "Error."
+                                    }
+                            });
                         }
                     }
                 }
-                return new UserManagerResponse
+                return BadRequest(new UserManagerResponse()
                 {
-                    Message = "User With Such Email Already Exist",
-                    IsSucces = false
-                };
+                    IsSucces = false,
+                    Errors = new List<string>()
+                        {
+                            "This email is already associated with an account."
+                        }
+                });
             }
-
-            return new UserManagerResponse
-            {
-                Message = "Successfully",
-                IsSucces = true,
-            };
+            return BadRequest();
         }
 
         [AllowAnonymous]
         [HttpPost("login")]
-        public async Task<UserManagerResponse> Login([FromBody] LoginModelDto model)
+        public async Task<IActionResult> LoginAsync([FromBody] LoginModelDto model)
         {
             var user = await _userManager.FindByEmailAsync(model.Email);
             if (user == null)
             {
-                return new UserManagerResponse
+                return BadRequest(new UserManagerResponse()
                 {
                     IsSucces = false,
-                    Message = "User with such email doesn't exist"
-                };
+                    Errors = new List<string>()
+                        {
+                           "User with such email doesn't exist"
+                        }
+                });
             }
             var checkingPasswordResult = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
 
             if (checkingPasswordResult.Succeeded)
             {
-                return await JwtService.GenerateJwt(user, _userManager, _authenticationOptions);
+                var encodedToken = await JwtService.GenerateJwt(user, _userManager, _authenticationOptions);
+                return Ok(encodedToken);
             }
 
-            return new UserManagerResponse
+            return BadRequest(new UserManagerResponse()
             {
-                Message = "Incorect password"
-            };
+                IsSucces = false,
+                Errors = new List<string>()
+                    {
+                       "Incorrect password"
+                    }
+            });
         }
         [HttpPost]
         [Authorize]
@@ -127,3 +144,30 @@ namespace OnlineShop.API.Controllers
         }
     }
 }
+
+/// <summary>
+///  The UserManager class is responsible for managing user accounts and authentication information 
+///  in an application. The UserManager class provides a convenient and flexible API for performing 
+///  common user management tasks, such as creating and updating user accounts, assigning roles, and 
+///  resetting passwords.
+///  The UserManager class is typically used in the application's code to perform user management 
+///  operations, such as creating a new user account, retrieving an existing user, or updating a 
+///  user's information. 
+/// </summary>
+
+
+/// <summary>
+///  The RoleManager class is responsible for managing role-based authorization in an application. 
+///  The RoleManager class provides a convenient and flexible API for performing common role management tasks, 
+///  such as creating and updating roles, assigning roles to users, and checking if a user is in a specific role.
+///  The RoleManager class is typically used in the application's code to perform role management operations, 
+///  such as creating a new role, retrieving a list of roles, or checking if a user is in a specific role. 
+/// </summary>
+
+
+/// <summary>
+///  The SignInManager class is a component of the ASP.NET Core Identity framework. It is responsible 
+///  for managing the sign-in process for users in an application. The SignInManager class provides a 
+///  convenient and flexible API for performing common sign-in tasks, such as signing in a user, signing 
+///  out a user, and checking if a user is signed in.
+/// </summary>

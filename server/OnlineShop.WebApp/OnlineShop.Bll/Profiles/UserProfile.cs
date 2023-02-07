@@ -8,10 +8,8 @@ namespace OnlineShop.Bll.Profiles
     {
         public UserProfile()
         {
-            CreateMap<User, UserDto>();
             CreateMap<User, RegisterModelDto>();
             CreateMap<User, LoginModelDto>();
-            CreateMap<User, ChangeUserDto>();
         }
     }
 }
